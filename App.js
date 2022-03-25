@@ -8,6 +8,7 @@ import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreeen from "./src/screens/ColorScreen";
 import TempScreen from "./src/screens/TempScreen";
 import ColorIncScreen from "./src/screens/ColorIncScreen";
+import LandingScreen from "./src/screens/LandingScreen";
 
 const navigator = createStackNavigator(
   {
@@ -19,11 +20,12 @@ const navigator = createStackNavigator(
     Color: ColorScreeen,
     ColorInc:ColorIncScreen,
     Temp: TempScreen,
+    Land: LandingScreen
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Land",
     defaultNavigationOptions: {
-      title: "App",
+      title: "WarranTime",
     },
   }
 );
